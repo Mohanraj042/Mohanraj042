@@ -9,9 +9,9 @@ class contactservices{
             await Promise.all( PhoneNumber.map(async (value) => {
                 const match = await checkmodel.findOne({ PhoneNumber: value });
                 if (match) {
-                  console.log(match['PhoneNumber']);
+                  //console.log(match['PhoneNumber']);
                   phones.push(match['PhoneNumber']);
-                  console.log(phones);
+                  //console.log(phones);
                 }
               })
             );
