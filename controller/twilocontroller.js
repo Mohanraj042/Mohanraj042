@@ -15,7 +15,8 @@ const invite = (req,res) => {
             to: recipientNumber
         })
         res.json({
-            status: true
+            status: true,
+            URL:url
         })
     }
     catch(err) {
